@@ -2,6 +2,9 @@
   "scripts": {
     "dev": "next dev"
   },
+  "engines": {
+    "node": ">=20.9"
+  },
   "dependencies": {
     "next": "^14.2.5",
     "react": "^18.3.1",

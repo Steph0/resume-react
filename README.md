@@ -1,2 +1,20 @@
 # resume-react
-Resume built with Next.js (React)
+
+## Description
+
+Resume built with Next.js 14+ (React)
+
+## Development
+
+Run in local using the following commands
+
+```sh
+npm ci
+npm run dev
+```
+
+## Third Parties
+
+* Reactjs: <https://react.dev/>
+* Nextjs: <https://nextjs.org/>
+* NVM: <https://github.com/nvm-sh/nvm>
