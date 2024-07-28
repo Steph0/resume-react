@@ -1,8 +1,10 @@
 'use client'
 import {
   createLocalizedPathnamesNavigation,
-  Pathnames
 } from 'next-intl/navigation'
+import {
+  Pathnames
+} from 'next-intl/routing'
 import { locales } from './i18n'
 
 export const localePrefix = 'always'
