@@ -19,19 +19,17 @@ export const Header: FC<Props> = ({ locale }) => {
       </nav>
       <div className='flex flex-row items-center gap-3'>
         <nav className='mr-10 inline-flex gap-5'>
-          <Link lang={locale} href={`/about`}>
-            {t('About')}
+          <Link lang={locale} href={'/rirekisho'}>
+            {t('Header.rirekisho')}
           </Link>
-          <a href=''>{t('Support')}</a>
-          <a href=''>{t('Other')}</a>
         </nav>
         <ThemeSwitch />
         <LangSwitcher />
         <a
           href='https://github.com/Steph0/'
           target='_blank'
-          aria-label={t('Github_portfolio_btn')}
-          title={t('Github_portfolio_btn')}
+          aria-label={t('Header.github_portfolio_btn')}
+          title={t('Header.github_portfolio_btn')}
         >
           <div className='size-8'>
             <GithubIcon />

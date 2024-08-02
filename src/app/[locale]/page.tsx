@@ -25,7 +25,7 @@ export default function DashboardPage() {
             target='_blank'
           >
             <Button rounded size='large'>
-              {t('Github_portfolio_btn')}
+              {t('Home.github_portfolio_btn')}
             </Button>
           </a>
         </div>
