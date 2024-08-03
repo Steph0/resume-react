@@ -2,6 +2,8 @@ import createMiddleware from 'next-intl/middleware'
 import { NextRequest } from 'next/server'
 import { locales } from './i18n'
 import { localePrefix } from './navigation'
+
+// eslint-disable-next-line no-unused-vars
 type CustomMiddleware = (req: NextRequest) => Promise<NextRequest>
 const customMiddleware: CustomMiddleware = async req => {
   console.log('Custom middleware executed before next-intl')

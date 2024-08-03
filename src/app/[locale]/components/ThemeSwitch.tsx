@@ -11,7 +11,7 @@ export default function ThemeSwitch() {
   const t = useTranslations('')
   const [mounted, setMounted] = useState(false)
   const [isOpen, setIsOpen] = useState(false) // New state to control dropdown visibility
-  const { setTheme, resolvedTheme, themes, theme } = useTheme()
+  const { setTheme, themes, theme } = useTheme()
   const ref = useRef(null)
   useEffect(() => setMounted(true), [])
   useOnClickOutside(ref, () => setIsOpen(false))

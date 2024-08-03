@@ -10,7 +10,8 @@ import NextTopLoader from 'nextjs-toploader'
 import { Header } from './components/Header'
 import './globals.css'
 
-const inter = Inter({
+// eslint-disable-next-line no-unused-vars
+const inter =Inter({
   subsets: ['latin'],
   variable: '--inter'
 })
@@ -23,6 +24,7 @@ export default function RootLayout({
   children,
   params: { locale }
 }: {
+  // eslint-disable-next-line no-undef
   children: React.ReactNode
   params: { locale: string }
 }) {
