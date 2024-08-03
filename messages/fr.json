@@ -1,13 +1,13 @@
 {
-  "Header" : {
+  "Header": {
     "github_portfolio_btn": "Accéder à mon Github",
     "rirekisho": "Rirekisho"
   },
-  "Home" : {
+  "Home": {
     "github_portfolio_btn": "Accéder à mon Github"
   },
-  "Rirekisho" : {
-    "Contact" : {
+  "Rirekisho": {
+    "Contact": {
       "title": "CV",
       "date": "{resumeDate, date, ::ddMMMMyyyy}",
       "nameFurigana": {
@@ -15,16 +15,16 @@
         "value": "/"
       },
       "name": {
-        "legend":"Nom",
-        "value":"MEHAUT STEPHEN"
+        "legend": "Nom",
+        "value": "MEHAUT STEPHEN"
       },
       "nationality": {
-        "legend":"Nationalité",
-        "value":"Française"
+        "legend": "Nationalité",
+        "value": "Française"
       },
       "age": {
-        "legend":"Date de naissance",
-        "value":"{dateOfBirth, date, ::ddMMMMyyyy}"
+        "legend": "Date de naissance",
+        "value": "{dateOfBirth, date, ::ddMMMMyyyy}"
       },
       "adressFurigana": {
         "legend": "Furigana",
@@ -35,12 +35,12 @@
         "postalCode": "",
         "postalAdress": "Me contacter par email"
       },
-      "contactFurigana" : {
-        "legend" : "Furigana",
+      "contactFurigana": {
+        "legend": "Furigana",
         "value": "/"
       },
-      "contact" : {
-        "legend" : "Contact",
+      "contact": {
+        "legend": "Contact",
         "value": "/"
       },
       "gender": {
@@ -49,19 +49,19 @@
         "separator": "・",
         "female": "F"
       },
-      "phonePerso" : {
+      "phonePerso": {
         "legend": "Tel.",
         "value": "Me contacter par email"
       },
-      "mailPerso" : {
+      "mailPerso": {
         "legend": "Email",
         "value": "stephen.mehaut@gmail.com"
       },
-      "phonePro" : {
+      "phonePro": {
         "legend": "Tel. pro",
         "value": "/"
       },
-      "mailPro" : {
+      "mailPro": {
         "legend": "Email pro",
         "value": "/"
       }

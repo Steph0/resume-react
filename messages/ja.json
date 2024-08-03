@@ -1,13 +1,13 @@
 {
-  "Header" : {
+  "Header": {
     "github_portfolio_btn": "私のGithubポートフォリオをご覧ください",
     "rirekisho": "履歴書"
   },
-  "Home" : {
+  "Home": {
     "github_portfolio_btn": "私のGithubポートフォリオをご覧ください"
   },
-  "Rirekisho" : {
-    "Contact" : {
+  "Rirekisho": {
+    "Contact": {
       "title": "履歴書",
       "date": "{resumeDate, date, ::yyyyMMMd}現在",
       "nameFurigana": {
@@ -15,16 +15,16 @@
         "value": "めお すてふぇん"
       },
       "name": {
-        "legend":"氏 名",
-        "value":"MEHAUT STEPHEN"
+        "legend": "氏 名",
+        "value": "MEHAUT STEPHEN"
       },
       "nationality": {
-        "legend":"国籍",
-        "value":"フランス"
+        "legend": "国籍",
+        "value": "フランス"
       },
       "age": {
-        "legend":"生年月日（年齢）",
-        "value":"{dateOfBirth, date, ::yyyyMMMd} (満35歳)"
+        "legend": "生年月日（年齢）",
+        "value": "{dateOfBirth, date, ::yyyyMMMd} (満35歳)"
       },
       "adressFurigana": {
         "legend": "ふりがな",
@@ -35,12 +35,12 @@
         "postalCode": "〒 59300",
         "postalAdress": "情報なし"
       },
-      "contactFurigana" : {
-        "legend" : "ふりがな",
+      "contactFurigana": {
+        "legend": "ふりがな",
         "value": "同上"
       },
-      "contact" : {
-        "legend" : "連絡先",
+      "contact": {
+        "legend": "連絡先",
         "value": "同上"
       },
       "gender": {
@@ -49,19 +49,19 @@
         "separator": "・",
         "female": "女"
       },
-      "phonePerso" : {
+      "phonePerso": {
         "legend": "電話",
         "value": "情報なし"
       },
-      "mailPerso" : {
+      "mailPerso": {
         "legend": "メールアドレス",
         "value": "stephen.mehaut@gmail.com"
       },
-      "phonePro" : {
+      "phonePro": {
         "legend": "電話",
         "value": "同上"
       },
-      "mailPro" : {
+      "mailPro": {
         "legend": "メールアドレス",
         "value": "同上"
       }
