@@ -1,13 +1,12 @@
-import { FC, ReactNode } from 'react';
+import { FC, PropsWithChildren } from 'react';
 import { Cell } from './Cell';
 import { cn } from '@/lib/utils';
 
-interface Props {
+interface RowHeaderProps extends PropsWithChildren<any> {
   className?: string;
-  children: ReactNode;
 }
 
-export const RowHeader: FC<Props> = ({ className = '', children }) => {
+export const RowHeader: FC<RowHeaderProps> = ({ className = '', children }) => {
   return (
     <Cell role='rowheader' className={cn('text-center', className)}>
       {children}

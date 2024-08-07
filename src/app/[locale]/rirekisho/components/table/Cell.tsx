@@ -1,17 +1,16 @@
 import { cn } from '@/lib/utils';
-import { FC, ReactNode } from 'react';
+import { FC, PropsWithChildren } from 'react';
 
-interface Props {
+interface CellProps extends PropsWithChildren<any> {
   role?: string;
   className?: string;
-  children: ReactNode;
 }
 
 const borders = 'border border-solid border-black';
 const padding = 'pt-2 pb-2 pl-2 pr-2';
 const alignement = 'content-center';
 
-export const Cell: FC<Props> = ({
+export const Cell: FC<CellProps> = ({
   role = 'cell',
   className = '',
   children,
