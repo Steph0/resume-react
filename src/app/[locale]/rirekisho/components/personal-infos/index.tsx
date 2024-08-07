@@ -8,74 +8,74 @@ export default function PersonalInfos() {
     <div className='grid grid-flow-row grid-cols-12'>
       <div className='col-start-1 col-end-10'>
         <RirekishoHeader
-          title={t('Rirekisho.Contact.title')}
-          date={t('Rirekisho.Contact.date', { resumeDate: Date.now() })}
+          title={t('Rirekisho.PersonalInfos.title')}
+          date={t('Rirekisho.PersonalInfos.date', { resumeDate: Date.now() })}
         />
         <Table className='grid-cols-9'>
           <Row>
             <RowHeader className='col-span-1'>
-              {t('Rirekisho.Contact.nameFurigana.legend')}
+              {t('Rirekisho.PersonalInfos.nameFurigana.legend')}
             </RowHeader>
             <Cell className='col-span-full col-start-2'>
-              {t('Rirekisho.Contact.nameFurigana.value')}
+              {t('Rirekisho.PersonalInfos.nameFurigana.value')}
             </Cell>
           </Row>
           <Row>
             <RowHeader className='col-span-1'>
-              {t('Rirekisho.Contact.name.legend')}
+              {t('Rirekisho.PersonalInfos.name.legend')}
             </RowHeader>
             <Cell className='col-span-full col-start-2 pb-4 pt-4 text-2xl'>
-              {t('Rirekisho.Contact.name.value')}
+              {t('Rirekisho.PersonalInfos.name.value')}
             </Cell>
           </Row>
           <Row>
             <RowHeader className='col-span-1'>
-              {t('Rirekisho.Contact.nationality.legend')}
+              {t('Rirekisho.PersonalInfos.nationality.legend')}
             </RowHeader>
             <Cell className='col-start-2 col-end-5'>
-              {t('Rirekisho.Contact.nationality.value')}
+              {t('Rirekisho.PersonalInfos.nationality.value')}
             </Cell>
             <RowHeader className='col-start-5 col-end-7'>
-              {t('Rirekisho.Contact.age.legend')}
+              {t('Rirekisho.PersonalInfos.age.legend')}
             </RowHeader>
             <Cell className='col-span-full col-start-7'>
-              {t('Rirekisho.Contact.age.value', {
+              {t('Rirekisho.PersonalInfos.age.value', {
                 dateOfBirth: Date.UTC(1990, 1, 11),
               })}
             </Cell>
           </Row>
           <Row>
             <RowHeader className='col-span-1'>
-              {t('Rirekisho.Contact.adressFurigana.legend')}
+              {t('Rirekisho.PersonalInfos.adressFurigana.legend')}
             </RowHeader>
             <Cell className='col-span-full col-start-2'>
-              {t('Rirekisho.Contact.adressFurigana.value')}
+              {t('Rirekisho.PersonalInfos.adressFurigana.value')}
             </Cell>
           </Row>
           <Row>
             <RowHeader className='col-span-1'>
-              {t('Rirekisho.Contact.address.legend')}
+              {t('Rirekisho.PersonalInfos.address.legend')}
             </RowHeader>
             <Cell className='col-span-full col-start-2'>
-              {t.rich('Rirekisho.Contact.address.value', {
+              {t.rich('Rirekisho.PersonalInfos.address.value', {
                 br: () => <br />,
               })}
             </Cell>
           </Row>
           <Row>
             <RowHeader className='col-span-1'>
-              {t('Rirekisho.Contact.contactFurigana.legend')}
+              {t('Rirekisho.PersonalInfos.contactFurigana.legend')}
             </RowHeader>
             <Cell className='col-span-full col-start-2'>
-              {t('Rirekisho.Contact.contactFurigana.value')}
+              {t('Rirekisho.PersonalInfos.contactFurigana.value')}
             </Cell>
           </Row>
           <Row>
             <RowHeader className='col-span-1'>
-              {t('Rirekisho.Contact.contact.legend')}
+              {t('Rirekisho.PersonalInfos.contact.legend')}
             </RowHeader>
             <Cell className='col-span-full col-start-2'>
-              {t.rich('Rirekisho.Contact.contact.value', {
+              {t.rich('Rirekisho.PersonalInfos.contact.value', {
                 br: () => <br />,
               })}
             </Cell>

@@ -7,7 +7,7 @@
     "github_portfolio_btn": "私のGithubポートフォリオをご覧ください"
   },
   "Rirekisho": {
-    "Contact": {
+    "PersonalInfos": {
       "title": "履歴書",
       "date": "{resumeDate, date, ::yyyyMMMd}現在",
       "nameFurigana": {

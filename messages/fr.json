@@ -7,7 +7,7 @@
     "github_portfolio_btn": "Accéder à mon Github"
   },
   "Rirekisho": {
-    "Contact": {
+    "PersonalInfos": {
       "title": "CV",
       "date": "{resumeDate, date, ::ddMMMMyyyy}",
       "nameFurigana": {
