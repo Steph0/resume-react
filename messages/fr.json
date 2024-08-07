@@ -32,8 +32,7 @@
       },
       "address": {
         "legend": "Adresse",
-        "postalCode": "",
-        "postalAdress": "Me contacter par email"
+        "value": "Me contacter par email"
       },
       "contactFurigana": {
         "legend": "Furigana",

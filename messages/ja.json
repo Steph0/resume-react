@@ -32,8 +32,7 @@
       },
       "address": {
         "legend": "現住所",
-        "postalCode": "〒 59300",
-        "postalAdress": "情報なし"
+        "value": "〒 59300<br></br>情報なし"
       },
       "contactFurigana": {
         "legend": "ふりがな",
@@ -41,7 +40,7 @@
       },
       "contact": {
         "legend": "連絡先",
-        "value": "同上"
+        "value": "〒<br></br>同上"
       },
       "gender": {
         "legend": "性別",

@@ -40,7 +40,43 @@ export default function PersonalInfos() {
             </RowHeader>
             <Cell className='col-span-full col-start-7'>
               {t('Rirekisho.Contact.age.value', {
-                dateOfBirth: new Date('11-02-1990'),
+                dateOfBirth: Date.UTC(1990, 1, 11),
+              })}
+            </Cell>
+          </Row>
+          <Row>
+            <RowHeader className='col-span-1'>
+              {t('Rirekisho.Contact.adressFurigana.legend')}
+            </RowHeader>
+            <Cell className='col-span-full col-start-2'>
+              {t('Rirekisho.Contact.adressFurigana.value')}
+            </Cell>
+          </Row>
+          <Row>
+            <RowHeader className='col-span-1'>
+              {t('Rirekisho.Contact.address.legend')}
+            </RowHeader>
+            <Cell className='col-span-full col-start-2'>
+              {t.rich('Rirekisho.Contact.address.value', {
+                br: () => <br />,
+              })}
+            </Cell>
+          </Row>
+          <Row>
+            <RowHeader className='col-span-1'>
+              {t('Rirekisho.Contact.contactFurigana.legend')}
+            </RowHeader>
+            <Cell className='col-span-full col-start-2'>
+              {t('Rirekisho.Contact.contactFurigana.value')}
+            </Cell>
+          </Row>
+          <Row>
+            <RowHeader className='col-span-1'>
+              {t('Rirekisho.Contact.contact.legend')}
+            </RowHeader>
+            <Cell className='col-span-full col-start-2'>
+              {t.rich('Rirekisho.Contact.contact.value', {
+                br: () => <br />,
               })}
             </Cell>
           </Row>

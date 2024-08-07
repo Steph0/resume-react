@@ -20,7 +20,7 @@
       },
       "nationality": {
         "legend": "Nationality",
-        "value": "Française"
+        "value": "French"
       },
       "age": {
         "legend": "Date of birth",
@@ -32,8 +32,7 @@
       },
       "address": {
         "legend": "Adress",
-        "postalCode": "",
-        "postalAdress": "Please email me for this information"
+        "value": "Please email me for this information"
       },
       "contactFurigana": {
         "legend": "Furigana",
