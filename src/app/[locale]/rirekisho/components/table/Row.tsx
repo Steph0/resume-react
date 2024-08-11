@@ -1,6 +1,6 @@
 import { FC, PropsWithChildren } from 'react';
 
-interface RowProps extends PropsWithChildren<any> {}
+interface RowProps extends PropsWithChildren {}
 
 const grid = 'grid grid-cols-subgrid col-span-full';
 

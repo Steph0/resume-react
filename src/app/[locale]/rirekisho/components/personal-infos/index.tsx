@@ -3,13 +3,16 @@ import { Cell, Row, RowHeader, Table } from '../table/';
 import { RirekishoHeader } from './RirekishoHeader';
 
 export default function PersonalInfos() {
-  const t = useTranslations('');
+  const t = useTranslations();
+  const now = new Date();
+
   return (
     <div className='grid grid-flow-row grid-cols-12'>
       <div className='col-start-1 col-end-10'>
         <RirekishoHeader
           title={t('Rirekisho.PersonalInfos.title')}
-          date={t('Rirekisho.PersonalInfos.date', { resumeDate: Date.now() })}
+          date={t('Rirekisho.PersonalInfos.date', { resumeDate: now })}
+          dateTime={now.toISOString()}
         />
         <Table className='grid-cols-9'>
           <Row>

@@ -2,7 +2,7 @@ import { FC, PropsWithChildren } from 'react';
 import { Cell } from './Cell';
 import { cn } from '@/lib/utils';
 
-interface RowHeaderProps extends PropsWithChildren<any> {
+interface RowHeaderProps extends PropsWithChildren {
   className?: string;
 }
 

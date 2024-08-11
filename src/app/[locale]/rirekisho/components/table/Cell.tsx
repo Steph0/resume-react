@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils';
 import { FC, PropsWithChildren } from 'react';
 
-interface CellProps extends PropsWithChildren<any> {
+interface CellProps extends PropsWithChildren {
   role?: string;
   className?: string;
 }
