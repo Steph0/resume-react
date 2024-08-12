@@ -1,95 +1,105 @@
 import { useTranslations } from 'next-intl';
-import { Cell, Row, RowHeader, Table } from '../table/';
 import { RirekishoHeader } from './RirekishoHeader';
+import { InfoItem } from './InfoItem';
 
 export default function PersonalInfos() {
   const t = useTranslations();
   const now = new Date();
 
   return (
-    <div className='grid grid-flow-row grid-cols-12'>
-      <div className='col-start-1 col-end-10'>
+    <div>
+      <div className='grid auto-cols-fr grid-cols-12 bg-slate-50'>
         <RirekishoHeader
           title={t('Rirekisho.PersonalInfos.title')}
           date={t('Rirekisho.PersonalInfos.date', { resumeDate: now })}
           dateTime={now.toISOString()}
+          className='col-span-9 row-span-1'
         />
-        <Table className='grid-cols-9'>
-          <Row>
-            <RowHeader className='col-span-1'>
-              {t('Rirekisho.PersonalInfos.nameFurigana.legend')}
-            </RowHeader>
-            <Cell className='col-span-full col-start-2'>
-              {t('Rirekisho.PersonalInfos.nameFurigana.value')}
-            </Cell>
-          </Row>
-          <Row>
-            <RowHeader className='col-span-1'>
-              {t('Rirekisho.PersonalInfos.name.legend')}
-            </RowHeader>
-            <Cell className='col-span-full col-start-2 pb-4 pt-4 text-2xl'>
-              {t('Rirekisho.PersonalInfos.name.value')}
-            </Cell>
-          </Row>
-          <Row>
-            <RowHeader className='col-span-1'>
-              {t('Rirekisho.PersonalInfos.nationality.legend')}
-            </RowHeader>
-            <Cell className='col-start-2 col-end-5'>
-              {t('Rirekisho.PersonalInfos.nationality.value')}
-            </Cell>
-            <RowHeader className='col-start-5 col-end-7'>
-              {t('Rirekisho.PersonalInfos.age.legend')}
-            </RowHeader>
-            <Cell className='col-span-full col-start-7'>
-              {t('Rirekisho.PersonalInfos.age.value', {
-                dateOfBirth: Date.UTC(1990, 1, 11),
-              })}
-            </Cell>
-          </Row>
-          <Row>
-            <RowHeader className='col-span-1'>
-              {t('Rirekisho.PersonalInfos.adressFurigana.legend')}
-            </RowHeader>
-            <Cell className='col-span-full col-start-2'>
-              {t('Rirekisho.PersonalInfos.adressFurigana.value')}
-            </Cell>
-          </Row>
-          <Row>
-            <RowHeader className='col-span-1'>
-              {t('Rirekisho.PersonalInfos.address.legend')}
-            </RowHeader>
-            <Cell className='col-span-full col-start-2'>
-              {t.rich('Rirekisho.PersonalInfos.address.value', {
-                br: () => <br />,
-              })}
-            </Cell>
-          </Row>
-          <Row>
-            <RowHeader className='col-span-1'>
-              {t('Rirekisho.PersonalInfos.contactFurigana.legend')}
-            </RowHeader>
-            <Cell className='col-span-full col-start-2'>
-              {t('Rirekisho.PersonalInfos.contactFurigana.value')}
-            </Cell>
-          </Row>
-          <Row>
-            <RowHeader className='col-span-1'>
-              {t('Rirekisho.PersonalInfos.contact.legend')}
-            </RowHeader>
-            <Cell className='col-span-full col-start-2'>
-              {t.rich('Rirekisho.PersonalInfos.contact.value', {
-                br: () => <br />,
-              })}
-            </Cell>
-          </Row>
-        </Table>
-      </div>
+        <div className='col-span-full col-start-10 row-span-4 bg-blue-400'>
+          <p>photo</p>
+        </div>
 
-      <div className='col-start-10 col-end-13 bg-blue-400'>
-        <p>photo</p>
-        <p>photo</p>
-        <p>photo</p>
+        <dl className='col-span-9 row-span-3 grid grid-cols-subgrid grid-rows-subgrid'>
+          <InfoItem
+            legend={t('Rirekisho.PersonalInfos.nameFurigana.legend')}
+            value={t('Rirekisho.PersonalInfos.nameFurigana.value')}
+            ariaLabel={t('Rirekisho.PersonalInfos.nameFurigana.ariaLabel')}
+          />
+
+          <InfoItem
+            legend={t('Rirekisho.PersonalInfos.name.legend')}
+            value={t('Rirekisho.PersonalInfos.name.value')}
+          />
+
+          <InfoItem
+            legend={t('Rirekisho.PersonalInfos.nationality.legend')}
+            value={t('Rirekisho.PersonalInfos.nationality.value')}
+            className='col-span-4'
+          />
+          <InfoItem
+            legend={t('Rirekisho.PersonalInfos.age.legend')}
+            value={t('Rirekisho.PersonalInfos.age.value', {
+              dateOfBirth: Date.UTC(1990, 1, 11),
+            })}
+            className='col-start-5'
+          />
+        </dl>
+
+        <dl className='col-span-full row-span-4 grid grid-cols-subgrid grid-rows-subgrid'>
+          <InfoItem
+            legend={t('Rirekisho.PersonalInfos.adressFurigana.legend')}
+            value={t('Rirekisho.PersonalInfos.adressFurigana.value')}
+            ariaLabel={t('Rirekisho.PersonalInfos.adressFurigana.ariaLabel')}
+            className='col-span-9'
+          />
+
+          <InfoItem
+            legend={'tel'}
+            value={'tel value'}
+            className='col-start-10'
+          />
+
+          <InfoItem
+            legend={t('Rirekisho.PersonalInfos.address.legend')}
+            value={t.rich('Rirekisho.PersonalInfos.address.value', {
+              br: () => <br />,
+            })}
+            className='col-span-9'
+          />
+
+          <InfoItem
+            legend={'email'}
+            value={'email value'}
+            className='col-start-10'
+          />
+
+          <InfoItem
+            legend={t('Rirekisho.PersonalInfos.contactFurigana.legend')}
+            value={t('Rirekisho.PersonalInfos.contactFurigana.value')}
+            ariaLabel={t('Rirekisho.PersonalInfos.contactFurigana.ariaLabel')}
+            className='col-span-9'
+          />
+
+          <InfoItem
+            legend={'tel pro'}
+            value={'tel pro value'}
+            className='col-start-10'
+          />
+
+          <InfoItem
+            legend={t('Rirekisho.PersonalInfos.contact.legend')}
+            value={t.rich('Rirekisho.PersonalInfos.contact.value', {
+              br: () => <br />,
+            })}
+            className='col-span-9'
+          />
+
+          <InfoItem
+            legend={'email pro'}
+            value={'email pro value'}
+            className='col-start-10'
+          />
+        </dl>
       </div>
     </div>
   );

@@ -12,7 +12,8 @@
       "date": "{resumeDate, date, ::yyyyMMMd}現在",
       "nameFurigana": {
         "legend": "ふりがな",
-        "value": "めお すてふぇん"
+        "value": "めお すてふぇん",
+        "ariaLabel": "氏 名 (ふりがな)"
       },
       "name": {
         "legend": "氏 名",
@@ -28,7 +29,8 @@
       },
       "adressFurigana": {
         "legend": "ふりがな",
-        "value": ""
+        "value": "",
+        "ariaLabel": "現住所 (ふりがな)"
       },
       "address": {
         "legend": "現住所",
@@ -36,7 +38,8 @@
       },
       "contactFurigana": {
         "legend": "ふりがな",
-        "value": "同上"
+        "value": "同上",
+        "ariaLabel": "連絡先 (ふりがな)"
       },
       "contact": {
         "legend": "連絡先",

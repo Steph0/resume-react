@@ -21,145 +21,119 @@ describe('PersonalInfos', () => {
   });
 
   describe('Basic identity infos', () => {
-    const _getRow = (rowNumber: number) => {
-      const basicIdentityTable = screen.getByRole('table');
-      return within(basicIdentityTable).getAllByRole('row')[rowNumber];
-    };
-
     test('it should render the furigana version of my name', async () => {
       // given
-      const rowNumber = 0;
-      const targetHeader = 'Furigana';
+      const targetLegend = 'Furigana';
+      const targetAriaLabel = 'Name in Furigana';
       const targetValue = '/';
       // when
       render(<PersonalInfos />);
 
       // then
-      const row = _getRow(rowNumber);
-      const header = within(row).getByRole('rowheader', { name: targetHeader });
-      expect(header).toBeDefined();
+      const legend = screen.getByRole('term', { name: targetAriaLabel });
+      expect(legend).toHaveTextContent(targetLegend);
 
-      const value = within(row).getByRole('cell', { name: targetValue });
-      expect(value).toBeDefined();
+      const value = screen.getByRole('definition', { name: targetAriaLabel });
+      expect(value).toHaveTextContent(targetValue);
     });
 
     test('it should render my name', async () => {
       // given
-      const rowNumber = 1;
-      const targetHeader = 'Name';
+      const targetLegend = 'Name';
       const targetValue = 'MEHAUT STEPHEN';
       // when
       render(<PersonalInfos />);
 
       // then
-      const row = _getRow(rowNumber);
-      const header = within(row).getByRole('rowheader', { name: targetHeader });
-      expect(header).toBeDefined();
-
-      const value = within(row).getByRole('cell', { name: targetValue });
-      expect(value).toBeDefined();
+      const legend = screen.getByRole('definition', { name: targetLegend });
+      expect(legend).toBeDefined();
+      expect(legend).toHaveTextContent(targetValue);
     });
 
     test('it should render my nationality', async () => {
       // given
-      const rowNumber = 2;
-      const targetHeader = 'Nationality';
+      const targetLegend = 'Nationality';
       const targetValue = 'French';
       // when
       render(<PersonalInfos />);
 
       // then
-      const row = _getRow(rowNumber);
-      const header = within(row).getByRole('rowheader', { name: targetHeader });
-      expect(header).toBeDefined();
-
-      const value = within(row).getByRole('cell', { name: targetValue });
-      expect(value).toBeDefined();
+      const legend = screen.getByRole('definition', { name: targetLegend });
+      expect(legend).toBeDefined();
+      expect(legend).toHaveTextContent(targetValue);
     });
 
     test('it should render my date of birth', async () => {
       // given
-      const rowNumber = 2;
-      const targetHeader = 'Date of birth';
+      const targetLegend = 'Date of birth';
       const targetValue = 'February 11, 1990';
       // when
       render(<PersonalInfos />);
 
       // then
-      const row = _getRow(rowNumber);
-      const header = within(row).getByRole('rowheader', { name: targetHeader });
-      expect(header).toBeDefined();
-
-      const value = within(row).getByRole('cell', { name: targetValue });
-      expect(value).toBeDefined();
+      const legend = screen.getByRole('definition', { name: targetLegend });
+      expect(legend).toBeDefined();
+      expect(legend).toHaveTextContent(targetValue);
     });
 
     test('it should render my address in furigana', async () => {
       // given
-      const rowNumber = 3;
-      const targetHeader = 'Furigana';
+      const targetLegend = 'Furigana';
+      const targetAriaLabel = 'Address in Furigana';
       const targetValue = '/';
+
       // when
       render(<PersonalInfos />);
 
       // then
-      const row = _getRow(rowNumber);
-      const header = within(row).getByRole('rowheader', { name: targetHeader });
-      expect(header).toBeDefined();
+      const legend = screen.getByRole('term', { name: targetAriaLabel });
+      expect(legend).toHaveTextContent(targetLegend);
 
-      const value = within(row).getByRole('cell', { name: targetValue });
-      expect(value).toBeDefined();
+      const value = screen.getByRole('definition', { name: targetAriaLabel });
+      expect(value).toHaveTextContent(targetValue);
     });
 
     test('it should render my address', async () => {
       // given
-      const rowNumber = 4;
-      const targetHeader = 'Address';
+      const targetLegend = 'Address';
       const targetValue = 'Please email me for this information';
       // when
       render(<PersonalInfos />);
 
       // then
-      const row = _getRow(rowNumber);
-      const header = within(row).getByRole('rowheader', { name: targetHeader });
-      expect(header).toBeDefined();
-
-      const value = within(row).getByRole('cell', { name: targetValue });
-      expect(value).toBeDefined();
+      const legend = screen.getByRole('definition', { name: targetLegend });
+      expect(legend).toBeDefined();
+      expect(legend).toHaveTextContent(targetValue);
     });
 
     test('it should render my alternate address in furigana', async () => {
       // given
-      const rowNumber = 5;
-      const targetHeader = 'Furigana';
+      const targetLegend = 'Furigana';
+      const targetAriaLabel = 'Contact in Furigana';
       const targetValue = 'Same as above';
+
       // when
       render(<PersonalInfos />);
 
       // then
-      const row = _getRow(rowNumber);
-      const header = within(row).getByRole('rowheader', { name: targetHeader });
-      expect(header).toBeDefined();
+      const legend = screen.getByRole('term', { name: targetAriaLabel });
+      expect(legend).toHaveTextContent(targetLegend);
 
-      const value = within(row).getByRole('cell', { name: targetValue });
-      expect(value).toBeDefined();
+      const value = screen.getByRole('definition', { name: targetAriaLabel });
+      expect(value).toHaveTextContent(targetValue);
     });
 
     test('it should render my alternate address', async () => {
       // given
-      const rowNumber = 6;
-      const targetHeader = 'Contact';
+      const targetLegend = 'Contact';
       const targetValue = 'Same as above';
       // when
       render(<PersonalInfos />);
 
       // then
-      const row = _getRow(rowNumber);
-      const header = within(row).getByRole('rowheader', { name: targetHeader });
-      expect(header).toBeDefined();
-
-      const value = within(row).getByRole('cell', { name: targetValue });
-      expect(value).toBeDefined();
+      const legend = screen.getByRole('definition', { name: targetLegend });
+      expect(legend).toBeDefined();
+      expect(legend).toHaveTextContent(targetValue);
     });
   });
 });

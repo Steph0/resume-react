@@ -28,19 +28,21 @@
       },
       "adressFurigana": {
         "legend": "Furigana",
-        "value": "/"
+        "value": "/",
+        "ariaLabel": "Addresse in Furigana"
       },
       "address": {
         "legend": "Adresse",
-        "value": "Me contacter par email"
+        "value": "〒<br></br>Me contacter par email"
       },
       "contactFurigana": {
         "legend": "Furigana",
-        "value": "/"
+        "value": "/",
+        "ariaLabel": "Contact in Furigana"
       },
       "contact": {
         "legend": "Contact",
-        "value": "/"
+        "value": "〒<br></br>/"
       },
       "gender": {
         "legend": "Genre",

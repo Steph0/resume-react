@@ -12,7 +12,8 @@
       "date": "{resumeDate, date, ::ddMMMMyyyy}",
       "nameFurigana": {
         "legend": "Furigana",
-        "value": "/"
+        "value": "/",
+        "ariaLabel": "Name in Furigana"
       },
       "name": {
         "legend": "Name",
@@ -28,19 +29,21 @@
       },
       "adressFurigana": {
         "legend": "Furigana",
-        "value": "/"
+        "value": "/",
+        "ariaLabel": "Address in Furigana"
       },
       "address": {
         "legend": "Address",
-        "value": "Please email me for this information"
+        "value": "〒<br></br>Please email me for this information"
       },
       "contactFurigana": {
         "legend": "Furigana",
-        "value": "Same as above"
+        "value": "Same as above",
+        "ariaLabel": "Contact in Furigana"
       },
       "contact": {
         "legend": "Contact",
-        "value": "Same as above"
+        "value": "〒<br></br>Same as above"
       },
       "gender": {
         "legend": "Genre",

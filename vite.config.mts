@@ -8,6 +8,7 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: [
       './__tests__/config/setup-i18n.ts',
+      './__tests__/config/setup-vitest.ts',
       './__tests__/config/setup-vitest-preview.ts',
     ],
     css: true,
