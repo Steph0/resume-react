@@ -182,7 +182,7 @@ describe('PersonalInfos', () => {
     test('it should render my personal phone', async () => {
       // given
       const targetLegend = 'Phone';
-      const targetValue = 'Please email me for this information';
+      const targetValue = 'Please email me';
       // when
       render(<PersonalInfos />);
 
