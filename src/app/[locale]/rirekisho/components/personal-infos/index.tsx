@@ -82,8 +82,8 @@ export default function PersonalInfos() {
           />
 
           <InfoItem
-            legend={'tel'}
-            value={'tel value'}
+            legend={t('Rirekisho.PersonalInfos.phonePerso.legend')}
+            value={t('Rirekisho.PersonalInfos.phonePerso.value')}
             className='col-start-10'
           />
 
@@ -96,8 +96,8 @@ export default function PersonalInfos() {
           />
 
           <InfoItem
-            legend={'email'}
-            value={'email value'}
+            legend={t('Rirekisho.PersonalInfos.mailPerso.legend')}
+            value={t('Rirekisho.PersonalInfos.mailPerso.value')}
             className='col-start-10'
           />
 
@@ -109,8 +109,8 @@ export default function PersonalInfos() {
           />
 
           <InfoItem
-            legend={'tel pro'}
-            value={'tel pro value'}
+            legend={t('Rirekisho.PersonalInfos.phonePro.legend')}
+            value={t('Rirekisho.PersonalInfos.phonePro.value')}
             className='col-start-10'
           />
 
@@ -123,8 +123,8 @@ export default function PersonalInfos() {
           />
 
           <InfoItem
-            legend={'email pro'}
-            value={'email pro value'}
+            legend={t('Rirekisho.PersonalInfos.mailPro.legend')}
+            value={t('Rirekisho.PersonalInfos.mailPro.value')}
             className='col-start-10'
           />
         </dl>

@@ -161,5 +161,57 @@ describe('PersonalInfos', () => {
       expect(legend).toBeDefined();
       expect(legend).toHaveTextContent(targetValue);
     });
+
+    test('it should render my personal phone', async () => {
+      // given
+      const targetLegend = 'Phone';
+      const targetValue = 'Please email me for this information';
+      // when
+      render(<PersonalInfos />);
+
+      // then
+      const legend = screen.getByRole('definition', { name: targetLegend });
+      expect(legend).toBeDefined();
+      expect(legend).toHaveTextContent(targetValue);
+    });
+
+    test('it should render my personal enail', async () => {
+      // given
+      const targetLegend = 'Email';
+      const targetValue = 'stephen.mehaut@gmail.com';
+      // when
+      render(<PersonalInfos />);
+
+      // then
+      const legend = screen.getByRole('definition', { name: targetLegend });
+      expect(legend).toBeDefined();
+      expect(legend).toHaveTextContent(targetValue);
+    });
+
+    test('it should render my professional phone', async () => {
+      // given
+      const targetLegend = 'Phone pro';
+      const targetValue = '/';
+      // when
+      render(<PersonalInfos />);
+
+      // then
+      const legend = screen.getByRole('definition', { name: targetLegend });
+      expect(legend).toBeDefined();
+      expect(legend).toHaveTextContent(targetValue);
+    });
+
+    test('it should render my professional enail', async () => {
+      // given
+      const targetLegend = 'Email pro';
+      const targetValue = '/';
+      // when
+      render(<PersonalInfos />);
+
+      // then
+      const legend = screen.getByRole('definition', { name: targetLegend });
+      expect(legend).toBeDefined();
+      expect(legend).toHaveTextContent(targetValue);
+    });
   });
 });

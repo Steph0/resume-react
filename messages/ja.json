@@ -24,7 +24,7 @@
         "value": "フランス"
       },
       "age": {
-        "legend": "生年月日（年齢）",
+        "legend": "生年月日",
         "value": "{dateOfBirth, date, ::yyyyMMMd} (満35歳)"
       },
       "adressFurigana": {
@@ -55,7 +55,7 @@
         "value": "情報なし"
       },
       "mailPerso": {
-        "legend": "メールアドレス",
+        "legend": "Ｅメール",
         "value": "stephen.mehaut@gmail.com"
       },
       "phonePro": {
@@ -63,7 +63,7 @@
         "value": "同上"
       },
       "mailPro": {
-        "legend": "メールアドレス",
+        "legend": "Ｅメール",
         "value": "同上"
       }
     }
