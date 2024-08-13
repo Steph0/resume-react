@@ -50,6 +50,32 @@ describe('PersonalInfos', () => {
       expect(legend).toHaveTextContent(targetValue);
     });
 
+    test('it should render my gender', async () => {
+      // given
+      const targetLegend = 'Gender';
+      const targetValue = 'H・F';
+      // when
+      render(<PersonalInfos />);
+
+      // then
+      const legend = screen.getByRole('definition', { name: targetLegend });
+      expect(legend).toBeDefined();
+      expect(legend).toHaveTextContent(targetValue);
+    });
+
+    test('it should indicate my applicable gender', async () => {
+      // given
+      const targetLegend = 'My gender is:';
+      const targetValue = 'H';
+      // when
+      render(<PersonalInfos />);
+
+      // then
+      const legend = screen.getByRole('img', { name: targetLegend });
+      expect(legend).toBeDefined();
+      expect(legend).toHaveTextContent(targetValue);
+    });
+
     test('it should render my nationality', async () => {
       // given
       const targetLegend = 'Nationality';

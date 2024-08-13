@@ -46,9 +46,8 @@
       },
       "gender": {
         "legend": "Genre",
-        "male": "H",
-        "separator": "・",
-        "female": "F"
+        "value": "<selected>H</selected><unapplicable>・F</unapplicable>",
+        "ariaLabel": "Mon genre est : "
       },
       "phonePerso": {
         "legend": "Tel.",

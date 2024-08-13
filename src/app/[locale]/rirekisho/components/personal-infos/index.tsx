@@ -8,7 +8,7 @@ export default function PersonalInfos() {
 
   return (
     <div>
-      <div className='grid auto-cols-fr grid-cols-12 bg-slate-50'>
+      <div className='grid auto-cols-fr grid-cols-12 bg-slate-50 '>
         <RirekishoHeader
           title={t('Rirekisho.PersonalInfos.title')}
           date={t('Rirekisho.PersonalInfos.date', { resumeDate: now })}
@@ -24,11 +24,38 @@ export default function PersonalInfos() {
             legend={t('Rirekisho.PersonalInfos.nameFurigana.legend')}
             value={t('Rirekisho.PersonalInfos.nameFurigana.value')}
             ariaLabel={t('Rirekisho.PersonalInfos.nameFurigana.ariaLabel')}
+            className='col-span-7'
           />
 
           <InfoItem
             legend={t('Rirekisho.PersonalInfos.name.legend')}
             value={t('Rirekisho.PersonalInfos.name.value')}
+            className='col-span-7'
+          />
+
+          <InfoItem
+            legend={t('Rirekisho.PersonalInfos.gender.legend')}
+            value={t.rich('Rirekisho.PersonalInfos.gender.value', {
+              selected: (chunks) => (
+                <span
+                  aria-label={t('Rirekisho.PersonalInfos.gender.ariaLabel')}
+                  role='img'
+                  className='rounded-full border border-solid border-black pb-1 pe-3 ps-3 pt-1'
+                >
+                  {chunks}
+                </span>
+              ),
+              unapplicable: (chunks) => (
+                <span aria-hidden={true} role='img'>
+                  {chunks}
+                </span>
+              ),
+            })}
+            className='col-start-8 row-span-2 row-start-1'
+            style={{
+              definition: 'hidden',
+              term: 'col-start-1 row-span-2 text-center p-8',
+            }}
           />
 
           <InfoItem
@@ -42,6 +69,7 @@ export default function PersonalInfos() {
               dateOfBirth: Date.UTC(1990, 1, 11),
             })}
             className='col-start-5'
+            style={{ definition: 'col-span-2', term: 'col-start-3 text-end' }}
           />
         </dl>
 

@@ -46,10 +46,9 @@
         "value": "〒<br></br>Same as above"
       },
       "gender": {
-        "legend": "Genre",
-        "male": "H",
-        "separator": "・",
-        "female": "F"
+        "legend": "Gender",
+        "value": "<selected>H</selected><unapplicable>・F</unapplicable>",
+        "ariaLabel": "My gender is: "
       },
       "phonePerso": {
         "legend": "Phone",

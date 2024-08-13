@@ -2,14 +2,20 @@ import { cn } from '@/lib/utils';
 import { FC, ReactNode } from 'react';
 import { nanoid } from 'nanoid';
 
+interface InfoItemStyleProp {
+  definition?: string;
+  term?: string;
+}
+
 interface InfoItemProps {
   legend: string;
   value: string | ReactNode;
   ariaLabel?: string;
   className?: string;
+  style?: InfoItemStyleProp;
 }
 
-const style = {
+const _defaultStyle = {
   commons: {
     borders: 'border border-solid border-black',
     padding: 'p-2',
@@ -29,19 +35,26 @@ export const InfoItem: FC<InfoItemProps> = ({
   value,
   ariaLabel,
   className,
+  style,
 }) => {
   const id = nanoid();
   return (
-    <div className={cn(style.wrapper, className)}>
+    <div className={cn(_defaultStyle.wrapper, className)}>
       <dt
         aria-label={ariaLabel}
-        className={cn(_flattenStyle(style.commons, style.definition))}
+        className={cn(
+          _flattenStyle(_defaultStyle.commons, _defaultStyle.definition),
+          style?.definition,
+        )}
         id={id}
       >
         {legend}
       </dt>
       <dd
-        className={cn(_flattenStyle(style.commons, style.term))}
+        className={cn(
+          _flattenStyle(_defaultStyle.commons, _defaultStyle.term),
+          style?.term,
+        )}
         aria-labelledby={id}
       >
         {value}

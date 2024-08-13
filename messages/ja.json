@@ -47,9 +47,8 @@
       },
       "gender": {
         "legend": "性別",
-        "male": "男",
-        "separator": "・",
-        "female": "女"
+        "value": "<selected>男</selected><unapplicable>・女</unapplicable>",
+        "ariaLabel": "私の性別："
       },
       "phonePerso": {
         "legend": "電話",
