@@ -5,15 +5,16 @@ import {
   NextIntlClientProvider,
   useMessages,
 } from 'next-intl';
-import { Inter } from 'next/font/google';
+import { Noto_Sans_JP } from 'next/font/google';
 import NextTopLoader from 'nextjs-toploader';
 import { Header } from './components/Header';
 import './globals.css';
+import { cn } from '@/lib/utils';
+import { ReactNode } from 'react';
 
-// eslint-disable-next-line no-unused-vars
-const inter = Inter({
+const notoSansJP = Noto_Sans_JP({
   subsets: ['latin'],
-  variable: '--inter',
+  variable: '--font-noto-sans-jp',
 });
 export const metadata: Metadata = {
   title: 'Stephen M. resume',
@@ -24,8 +25,7 @@ export default function RootLayout({
   children,
   params: { locale },
 }: {
-  // eslint-disable-next-line no-undef
-  children: React.ReactNode;
+  children: ReactNode;
   params: { locale: string };
 }) {
   const messages = useMessages();
@@ -33,7 +33,7 @@ export default function RootLayout({
     <html
       lang={locale}
       dir={'ltr'}
-      className={'scroll-smooth'}
+      className={cn(notoSansJP.variable, 'font-sans', 'scroll-smooth')}
       suppressHydrationWarning
     >
       <body>
