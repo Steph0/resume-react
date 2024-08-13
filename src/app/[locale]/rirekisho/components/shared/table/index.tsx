@@ -1,4 +1,4 @@
 export { Table } from './Table';
 export { Row } from './Row';
-export { RowHeader } from './RowHeader';
+export { ColHeader } from './ColHeader';
 export { Cell } from './Cell';

@@ -9,7 +9,7 @@ export default function PersonalInfos() {
 
   return (
     <div>
-      <div className='grid auto-cols-fr grid-cols-12 bg-slate-50 '>
+      <div className='grid auto-cols-fr grid-cols-12'>
         <RirekishoHeader
           title={t('Rirekisho.PersonalInfos.title')}
           date={t('Rirekisho.PersonalInfos.date', { resumeDate: now })}

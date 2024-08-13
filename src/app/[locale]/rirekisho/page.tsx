@@ -1,3 +1,4 @@
+import Education from './components/education/index';
 import PersonalInfos from './components/personal-infos/index';
 
 export default function Rirekisho() {
@@ -5,11 +6,7 @@ export default function Rirekisho() {
     <section className='flex flex-col gap-y-2 bg-slate-50 dark:bg-slate-900'>
       <PersonalInfos />
 
-      <div className='bg-orange-400'>
-        <p>education</p>
-        <p>education</p>
-        <p>education</p>
-      </div>
+      <Education />
 
       <div className='bg-violet-400'>
         <p>qualification</p>

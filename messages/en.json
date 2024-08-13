@@ -67,6 +67,14 @@
         "legend": "Email pro",
         "value": "/"
       }
+    },
+    "Education": {
+      "headers": {
+        "year": "Year",
+        "month": "Month",
+        "history": "Educational and work history"
+
+      }
     }
   },
   "Theme": "Theme",
