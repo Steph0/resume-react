@@ -12,7 +12,8 @@
       "date": "{resumeDate, date, ::ddMMMMyyyy}",
       "nameFurigana": {
         "legend": "Furigana",
-        "value": "/"
+        "value": "/",
+        "ariaLabel": "Nom en Furigana"
       },
       "name": {
         "legend": "Nom",
