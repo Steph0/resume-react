@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { RirekishoHeader } from './RirekishoHeader';
 import { InfoItem } from './InfoItem';
+import { Photo } from './Photo';
 
 export default function PersonalInfos() {
   const t = useTranslations();
@@ -15,8 +16,8 @@ export default function PersonalInfos() {
           dateTime={now.toISOString()}
           className='col-span-9 row-span-1'
         />
-        <div className='col-span-full col-start-10 row-span-4 bg-blue-400'>
-          <p>photo</p>
+        <div className='col-span-full col-start-10 row-span-4'>
+          <Photo />
         </div>
 
         <dl className='col-span-9 row-span-3 grid grid-cols-subgrid grid-rows-subgrid'>

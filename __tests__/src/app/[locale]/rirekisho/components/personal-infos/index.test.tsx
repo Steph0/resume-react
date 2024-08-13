@@ -20,6 +20,20 @@ describe('PersonalInfos', () => {
     });
   });
 
+  describe('Photo', () => {
+
+    test('it should render my photo', async () => {
+      // given
+      const alt = 'Photo';
+      // when
+      render(<PersonalInfos />);
+
+      // then
+      const photo = screen.getByRole('img', { name: alt });
+      expect(photo).toBeDefined();
+    });
+  });
+
   describe('Basic identity infos', () => {
     test('it should render the furigana version of my name', async () => {
       // given
@@ -101,7 +115,9 @@ describe('PersonalInfos', () => {
       expect(legend).toBeDefined();
       expect(legend).toHaveTextContent(targetValue);
     });
+  });
 
+  describe('Addresses', () => {
     test('it should render my address in furigana', async () => {
       // given
       const targetLegend = 'Furigana';
@@ -161,7 +177,8 @@ describe('PersonalInfos', () => {
       expect(legend).toBeDefined();
       expect(legend).toHaveTextContent(targetValue);
     });
-
+  });
+  describe('Means of contact', () => {
     test('it should render my personal phone', async () => {
       // given
       const targetLegend = 'Phone';

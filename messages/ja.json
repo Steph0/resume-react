@@ -10,6 +10,7 @@
     "PersonalInfos": {
       "title": "履歴書",
       "date": "{resumeDate, date, ::yyyyMMMd}現在",
+      "photoAlt": "写真",
       "nameFurigana": {
         "legend": "ふりがな",
         "value": "めお すてふぇん",
@@ -34,7 +35,7 @@
       },
       "address": {
         "legend": "現住所",
-        "value": "〒 59300<br></br>情報なし"
+        "value": "〒<br></br>情報なし"
       },
       "contactFurigana": {
         "legend": "ふりがな",

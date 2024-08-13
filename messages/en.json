@@ -10,6 +10,7 @@
     "PersonalInfos": {
       "title": "Resume",
       "date": "{resumeDate, date, ::ddMMMMyyyy}",
+      "photoAlt": "Photo",
       "nameFurigana": {
         "legend": "Furigana",
         "value": "/",
