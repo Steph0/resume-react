@@ -11,7 +11,8 @@ describe('Education', () => {
 
       // then
       const table = screen.getByRole('table');
-      const columns = within(table).getAllByRole('columnheader');
+      const headers = within(table).getAllByRole('rowgroup')[0];
+      const columns = within(headers).getAllByRole('columnheader');
       expect(columns[0]).toBeDefined();
       expect(columns[0]).toHaveAccessibleName('Year');
 
@@ -20,6 +21,24 @@ describe('Education', () => {
 
       expect(columns[2]).toBeDefined();
       expect(columns[2]).toHaveAccessibleName('Educational and work history');
+    });
+  });
+
+  describe('Rows', () => {
+    test('it should contains four rows with three columns', async () => {
+      // given
+      // when
+      render(<Education />);
+
+      // then
+      const table = screen.getByRole('table');
+      const headers = within(table).getAllByRole('rowgroup')[1];
+      const rows = within(headers).getAllByRole('row');
+      expect(rows).to.have.lengthOf(4);
+      rows.forEach((row) => {
+        const cells = within(row).getAllByRole('cell');
+        expect(cells).to.have.lengthOf(3);
+      });
     });
   });
 });

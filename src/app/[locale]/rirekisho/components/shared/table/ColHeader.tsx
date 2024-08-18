@@ -8,7 +8,10 @@ interface ColHeaderProps extends PropsWithChildren {
 
 export const ColHeader: FC<ColHeaderProps> = ({ className = '', children }) => {
   return (
-    <Cell role='columnheader' className={cn('text-center', className)}>
+    <Cell
+      role='columnheader'
+      className={cn('text-center font-bold', className)}
+    >
       {children}
     </Cell>
   );

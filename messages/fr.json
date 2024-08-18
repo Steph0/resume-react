@@ -73,7 +73,28 @@
         "year": "Annee",
         "month": "Mois",
         "history": "Historique professionnel et educatif"
-
+      },
+      "rows": {
+        "baccalaureateStart": {
+          "year": "2005",
+          "month": "09",
+          "text": "Entrée au lycée de l'Escaut, Valenciennes, France"
+        },
+        "baccalaureateEnd": {
+          "year": "2008",
+          "month": "07",
+          "text": "Baccalauréat Français, mention Très Bien.<br></br>Filière S Option SVT + Anglais Européen."
+        },
+        "engineerStart": {
+          "year": "2008",
+          "month": "09",
+          "text": "Entrée à IG2I, Ecole Centrale Lille, Lens, France"
+        },
+        "engineerEnd": {
+          "year": "2013",
+          "month": "07",
+          "text": "Diplomé ingénieur de l'Ecole Centrale Lille, France.<br></br>Génie Informatique et Industriel. Option Génie Informatique."
+        }
       }
     }
   },

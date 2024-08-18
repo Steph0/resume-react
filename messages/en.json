@@ -73,7 +73,28 @@
         "year": "Year",
         "month": "Month",
         "history": "Educational and work history"
-
+      },
+      "rows": {
+        "baccalaureateStart": {
+          "year": "2005",
+          "month": "09",
+          "text": "Enrolled in Escaut High School in Valenciennes, France"
+        },
+        "baccalaureateEnd": {
+          "year": "2008",
+          "month": "07",
+          "text": "FRENCH BACCALAUREATE WITH HIGHEST QUALIFICATIONS.<br></br>High School: Biology & Environmental Science as main subjects + English Certificate"
+        },
+        "engineerStart": {
+          "year": "2008",
+          "month": "09",
+          "text": "Enrolled at IG2I, CENTRAL SCHOOL LILLE in Lens, France"
+        },
+        "engineerEnd": {
+          "year": "2013",
+          "month": "07",
+          "text": "MASTERS DEGREE AT IG2I, CENTRAL SCHOOL LILLE, FRANCE.<br></br>IT & Industrial Engineer. Software Development specialisation"
+        }
       }
     }
   },

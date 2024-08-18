@@ -73,6 +73,28 @@
         "year": "年",
         "month": "月",
         "history": "学歴 ・ 職歴"
+      },
+      "rows": {
+        "baccalaureateStart": {
+          "year": "2005",
+          "month": "09",
+          "text": "フランスのバランシエンヌ町 エスコー高等学校  入学"
+        },
+        "baccalaureateEnd": {
+          "year": "2008",
+          "month": "07",
+          "text": "FRENCH BACCALAUREATE WITH HIGHEST QUALIFICATIONS.<br></br>High School: Biology & Environmental Science as main subjects + English Certificate"
+        },
+        "engineerStart": {
+          "year": "2008",
+          "month": "09",
+          "text": " フランスのリール町  エコール・サントラル・ド・リール大学  入学"
+        },
+        "engineerEnd": {
+          "year": "2013",
+          "month": "07",
+          "text": "MASTERS DEGREE AT IG2I, CENTRAL SCHOOL LILLE, FRANCE.<br></br>IT & Industrial Engineer. Software Development specialisation"
+        }
       }
     }
   },

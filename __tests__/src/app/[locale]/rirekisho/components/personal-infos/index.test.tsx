@@ -21,7 +21,6 @@ describe('PersonalInfos', () => {
   });
 
   describe('Photo', () => {
-
     test('it should render my photo', async () => {
       // given
       const alt = 'Photo';
