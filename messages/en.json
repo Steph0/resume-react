@@ -10,7 +10,7 @@
     "PersonalInfos": {
       "title": "Resume",
       "date": "{resumeDate, date, ::ddMMMMyyyy}",
-      "photoAlt": "Photo",
+      "photoAlt": "Photo of the author",
       "nameFurigana": {
         "legend": "Furigana",
         "value": "/",
@@ -72,8 +72,9 @@
       "headers": {
         "year": "Year",
         "month": "Month",
-        "history": "Educational and work history"
+        "history": "Academic and work history"
       },
+      "caption": "Academic history",
       "rows": {
         "baccalaureateStart": {
           "year": "2005",
@@ -94,6 +95,21 @@
           "year": "2013",
           "month": "07",
           "text": "MASTERS DEGREE AT IG2I, CENTRAL SCHOOL LILLE, FRANCE.<br></br>IT & Industrial Engineer. Software Development specialisation"
+        }
+      }
+    },
+    "Work": {
+      "headers": {
+        "year": "Year",
+        "month": "Month",
+        "history": "Academic and work history"
+      },
+      "caption": "Work history",
+      "rows": {
+        "worldlineStart": {
+          "year": "2013",
+          "month": "09",
+          "text": "Joined Worldline SA, Lyon, France (fulltime employee)"
         }
       }
     }

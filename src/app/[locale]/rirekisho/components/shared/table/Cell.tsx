@@ -4,6 +4,7 @@ import { FC, PropsWithChildren } from 'react';
 interface CellProps extends PropsWithChildren {
   role?: string;
   className?: string;
+  ariaHidden?: boolean;
 }
 
 const borders = 'border border-solid border-black';
@@ -14,9 +15,14 @@ export const Cell: FC<CellProps> = ({
   role = 'cell',
   className = '',
   children,
+  ariaHidden,
 }) => {
   return (
-    <p role={role} className={cn(borders, alignement, padding, className)}>
+    <p
+      aria-hidden={ariaHidden}
+      role={role}
+      className={cn(borders, alignement, padding, className)}
+    >
       {children}
     </p>
   );

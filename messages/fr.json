@@ -10,7 +10,7 @@
     "PersonalInfos": {
       "title": "CV",
       "date": "{resumeDate, date, ::ddMMMMyyyy}",
-      "photoAlt": "Photo",
+      "photoAlt": "Photo de l'auteur",
       "nameFurigana": {
         "legend": "Furigana",
         "value": "/",
@@ -72,8 +72,9 @@
       "headers": {
         "year": "Annee",
         "month": "Mois",
-        "history": "Historique professionnel et educatif"
+        "history": "Historique professionnel et éducatif"
       },
+      "caption": "Historique éducatif",
       "rows": {
         "baccalaureateStart": {
           "year": "2005",
@@ -94,6 +95,21 @@
           "year": "2013",
           "month": "07",
           "text": "Diplomé ingénieur de l'Ecole Centrale Lille, France.<br></br>Génie Informatique et Industriel. Option Génie Informatique."
+        }
+      }
+    },
+    "Work": {
+      "headers": {
+        "year": "Annee",
+        "month": "Mois",
+        "history": "Historique professionnel et éducatif"
+      },
+      "caption": "Historique professionel",
+      "rows": {
+        "worldlineStart": {
+          "year": "2013",
+          "month": "04",
+          "text": "Entrée à Worldline, France"
         }
       }
     }

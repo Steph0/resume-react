@@ -10,10 +10,10 @@
     "PersonalInfos": {
       "title": "履歴書",
       "date": "{resumeDate, date, ::yyyyMMMd}現在",
-      "photoAlt": "写真",
+      "photoAlt": "すてふぇんの写真",
       "nameFurigana": {
         "legend": "ふりがな",
-        "value": "めお すてふぇん",
+        "value": "めお ・すてふぇん",
         "ariaLabel": "氏 名 (ふりがな)"
       },
       "name": {
@@ -22,7 +22,7 @@
       },
       "nationality": {
         "legend": "国籍",
-        "value": "フランス"
+        "value": "仏国"
       },
       "age": {
         "legend": "生年月日",
@@ -74,11 +74,12 @@
         "month": "月",
         "history": "学歴 ・ 職歴"
       },
+      "caption": "学歴",
       "rows": {
         "baccalaureateStart": {
           "year": "2005",
           "month": "09",
-          "text": "フランスのバランシエンヌ町 エスコー高等学校  入学"
+          "text": "仏国のバランシエンヌ町 エスコー高等学校  入学"
         },
         "baccalaureateEnd": {
           "year": "2008",
@@ -88,12 +89,27 @@
         "engineerStart": {
           "year": "2008",
           "month": "09",
-          "text": " フランスのリール町  エコール・サントラル・ド・リール大学  入学"
+          "text": " 仏国のリール町  エコール・サントラル・ド・リール(IG2I)修士工学コンピュータ科学  入学"
         },
         "engineerEnd": {
           "year": "2013",
           "month": "07",
-          "text": "MASTERS DEGREE AT IG2I, CENTRAL SCHOOL LILLE, FRANCE.<br></br>IT & Industrial Engineer. Software Development specialisation"
+          "text": "仏国のリール町  エコール・サントラル・ド・リール(IG2I)修士工学コンピュータ科学  卒業"
+        }
+      }
+    },
+    "Work": {
+      "headers": {
+        "year": "年",
+        "month": "月",
+        "history": "学歴 ・ 職歴"
+      },
+      "caption": "職歴",
+      "rows": {
+        "worldlineStart": {
+          "year": "2013",
+          "month": "04",
+          "text": "Joined Worldline SA, Lyon, France (fulltime employee)"
         }
       }
     }

@@ -1,15 +1,14 @@
 import { useTranslations } from 'next-intl';
-import { Table } from '../shared/table/Table';
-import { Row } from '../shared/table/Row';
-import { ColHeader } from '../shared/table/ColHeader';
-import { Cell } from '../shared/table/Cell';
+import { Table, Row, ColHeader, Cell, Caption } from '../shared/table';
 
-const ROWS_KEYS = [
+const EDUCATION_ROWS_KEYS = [
   'baccalaureateStart',
   'baccalaureateEnd',
   'engineerStart',
   'engineerEnd',
 ] as const;
+
+const WORK_ROWS_KEYS = ['worldlineStart'] as const;
 
 export default function Education() {
   const t = useTranslations();
@@ -28,8 +27,9 @@ export default function Education() {
           </ColHeader>
         </Row>
       </div>
+      <Caption>{t('Rirekisho.Education.caption')}</Caption>
       <div role='rowgroup' className='col-span-full grid grid-cols-subgrid'>
-        {ROWS_KEYS.map((row) => (
+        {EDUCATION_ROWS_KEYS.map((row) => (
           <Row key={row}>
             <Cell className='col-span-2 text-center'>
               {t(`Rirekisho.Education.rows.${row}.year`)}
@@ -39,6 +39,30 @@ export default function Education() {
             </Cell>
             <Cell className='col-span-full col-start-4'>
               {t.rich(`Rirekisho.Education.rows.${row}.text`, {
+                br: () => <br />,
+              })}
+            </Cell>
+          </Row>
+        ))}
+        <Row ariaHidden>
+          {/* Empty Rirekisho separation line */}
+          <Cell ariaHidden className='col-span-2'></Cell>
+          <Cell ariaHidden className='col-span-1'></Cell>
+          <Cell ariaHidden className='col-span-full col-start-4'></Cell>
+        </Row>
+      </div>
+      <Caption>{t('Rirekisho.Work.caption')}</Caption>
+      <div role='rowgroup' className='col-span-full grid grid-cols-subgrid'>
+        {WORK_ROWS_KEYS.map((row) => (
+          <Row key={row}>
+            <Cell className='col-span-2 text-center'>
+              {t(`Rirekisho.Work.rows.${row}.year`)}
+            </Cell>
+            <Cell className='col-span-1 text-center'>
+              {t(`Rirekisho.Work.rows.${row}.month`)}
+            </Cell>
+            <Cell className='col-span-full col-start-4'>
+              {t.rich(`Rirekisho.Work.rows.${row}.text`, {
                 br: () => <br />,
               })}
             </Cell>
