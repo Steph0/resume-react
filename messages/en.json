@@ -1,10 +1,12 @@
 {
   "Header": {
-    "github_portfolio_btn": "See my Github portfolio",
-    "rirekisho": "Rirekisho"
+    "home": "Back to homepage",
+    "githubPortfolio": "See my Github portfolio",
+    "rirekisho": "Rirekisho",
+    "theme": "Theme"
   },
   "Home": {
-    "github_portfolio_btn": "See my Github portfolio"
+    "githubPortfolio": "See my Github portfolio"
   },
   "Rirekisho": {
     "PersonalInfos": {
@@ -114,7 +116,6 @@
       }
     }
   },
-  "Theme": "Theme",
   "An": "A",
   "Booster": "Booster",
   "to_Your_NextJS_Apps": "to Your NextJS Apps",

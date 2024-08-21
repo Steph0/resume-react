@@ -1,10 +1,12 @@
 {
   "Header": {
-    "github_portfolio_btn": "私のGithubポートフォリオをご覧ください",
-    "rirekisho": "履歴書"
+    "home": "ホームページに戻る",
+    "githubPortfolio": "私のGithubポートフォリオをご覧ください",
+    "rirekisho": "履歴書",
+    "Theme": "テーマ"
   },
   "Home": {
-    "github_portfolio_btn": "私のGithubポートフォリオをご覧ください"
+    "githubPortfolio": "私のGithubポートフォリオをご覧ください"
   },
   "Rirekisho": {
     "PersonalInfos": {
@@ -114,7 +116,6 @@
       }
     }
   },
-  "Theme": "テーマ",
   "An": "ある",
   "Booster": "ブースター",
   "to_Your_NextJS_Apps": "あなたのNextJSアプリケーションに",

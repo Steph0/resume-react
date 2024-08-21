@@ -22,7 +22,7 @@ export default function DashboardPage() {
         <div className='mt-4 flex flex-row gap-4'>
           <a href='https://github.com/Steph0/' target='_blank'>
             <Button rounded size='large'>
-              {t('Home.github_portfolio_btn')}
+              {t('Home.githubPortfolio')}
             </Button>
           </a>
         </div>
