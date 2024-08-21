@@ -8,7 +8,7 @@ export default function PersonalInfos() {
   const now = new Date();
 
   return (
-    <div>
+    <>
       <div className='grid auto-cols-fr grid-cols-12'>
         <RirekishoHeader
           title={t('Rirekisho.PersonalInfos.title')}
@@ -41,7 +41,7 @@ export default function PersonalInfos() {
                 <span
                   aria-label={t('Rirekisho.PersonalInfos.gender.ariaLabel')}
                   role='img'
-                  className='rounded-full border border-solid border-black pb-1 pe-3 ps-3 pt-1'
+                  className='rounded-full border border-solid border-black pb-1 pe-2 ps-2 pt-1'
                 >
                   {chunks}
                 </span>
@@ -86,6 +86,10 @@ export default function PersonalInfos() {
             legend={t('Rirekisho.PersonalInfos.phonePerso.legend')}
             value={t('Rirekisho.PersonalInfos.phonePerso.value')}
             className='col-start-10'
+            style={{
+              definition: 'col-span-1',
+              term: 'col-start-2',
+            }}
           />
 
           <InfoItem
@@ -100,6 +104,10 @@ export default function PersonalInfos() {
             legend={t('Rirekisho.PersonalInfos.mailPerso.legend')}
             value={t('Rirekisho.PersonalInfos.mailPerso.value')}
             className='col-start-10'
+            style={{
+              definition: 'col-span-1',
+              term: 'col-start-2',
+            }}
           />
 
           <InfoItem
@@ -113,6 +121,10 @@ export default function PersonalInfos() {
             legend={t('Rirekisho.PersonalInfos.phonePro.legend')}
             value={t('Rirekisho.PersonalInfos.phonePro.value')}
             className='col-start-10'
+            style={{
+              definition: 'col-span-1',
+              term: 'col-start-2',
+            }}
           />
 
           <InfoItem
@@ -127,9 +139,13 @@ export default function PersonalInfos() {
             legend={t('Rirekisho.PersonalInfos.mailPro.legend')}
             value={t('Rirekisho.PersonalInfos.mailPro.value')}
             className='col-start-10'
+            style={{
+              definition: 'col-span-1',
+              term: 'col-start-2',
+            }}
           />
         </dl>
       </div>
-    </div>
+    </>
   );
 }

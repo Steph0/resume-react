@@ -22,11 +22,11 @@ const _defaultStyle = {
   },
   wrapper: 'col-span-full grid grid-cols-subgrid grid-rows-subgrid',
   definition: {
-    grid: 'col-span-1 row-span-1',
-    text: 'text-center',
+    grid: 'col-span-2 row-span-1',
+    text: 'text-center font-bold',
   },
   term: {
-    grid: 'col-span-full col-start-2',
+    grid: 'col-span-full col-start-3',
   },
 };
 

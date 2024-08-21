@@ -13,7 +13,7 @@ interface Props {
 export const Header: FC<Props> = ({ locale }) => {
   const t = useTranslations();
   return (
-    <div className='mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-5'>
+    <div className='mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-5 print:hidden'>
       <nav className='mr-10 inline-flex gap-5 text-button'>
         <Link
           lang={locale}

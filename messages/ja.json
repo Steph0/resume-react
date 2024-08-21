@@ -3,7 +3,7 @@
     "home": "ホームページに戻る",
     "githubPortfolio": "私のGithubポートフォリオをご覧ください",
     "rirekisho": "履歴書",
-    "Theme": "テーマ"
+    "theme": "テーマ"
   },
   "Home": {
     "githubPortfolio": "私のGithubポートフォリオをご覧ください"
@@ -58,7 +58,7 @@
         "value": "情報なし"
       },
       "mailPerso": {
-        "legend": "Ｅメール",
+        "legend": "メール",
         "value": "stephen.mehaut@gmail.com"
       },
       "phonePro": {
@@ -66,7 +66,7 @@
         "value": "同上"
       },
       "mailPro": {
-        "legend": "Ｅメール",
+        "legend": "メール",
         "value": "同上"
       }
     },
